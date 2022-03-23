@@ -2,6 +2,11 @@
 
 A Clojurescript implementation of msgpack. This library's structure is *heavily* adapted from the great work done on [clojure-msgpack](https://github.com/edma2/clojure-msgpack). Support for Clojure `keyword`, `symbol`, `char`, `ratio`, and `set` are all included by default as Extension types for convenience and to be compatible with `clojure-msgpack`. 
 
+## Installation
+
+[![Clojars Project](https://img.shields.io/clojars/v/org.clojars.ertucetin/msgpack-cljs.svg)](https://clojars.org/org.clojars.ertucetin/msgpack-cljs)
+
+
 ## Usage
 
 `pack` takes an arbitrary object and converts it into a `Uint8Array`. 

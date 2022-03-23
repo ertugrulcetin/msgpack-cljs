@@ -1,13 +1,11 @@
-(defproject org.clojars.ertucetin/msgpack-cljs "0.1.0"
+(defproject org.clojars.ertucetin/msgpack-cljs "0.1.2"
   :description "A ClojureScript library for serializing and deserializing to msgpack."
-  :plugins [[lein-cljsbuild "LATEST"]]
   :license {:name "APACHE LICENSE, VERSION 2.0 (CURRENT)"
             :url "https://www.apache.org/licenses/LICENSE-2.0"}
-  :dependencies [[org.clojure/clojure "LATEST"]
-                 [org.clojure/clojurescript "LATEST"]]
+  :source-paths ["src"]
   :cljsbuild {:builds
               [{:id "dev"
-                :source-paths ["cljs-src"]
+                :source-paths ["src"]
                 :compiler
                 {:output-to "static/development/index.js"
                  :source-map true
@@ -18,7 +16,7 @@
                  :cache-analysis true
                  :pretty-print true}}
                {:id "release"
-                :source-paths ["cljs-src"]
+                :source-paths ["src"]
                 :compiler
                 {:output-to "static/release/index.js"
                  :source-map "static/release/index.js.map"

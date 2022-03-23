@@ -404,7 +404,7 @@
 
 (defn unpack [bytes]
   (unpack-stream
-    (output-stream (.-buffer bytes))))
+    (output-stream bytes)))
 
 (defn pack [obj]
   (let [stream (input-stream)]
